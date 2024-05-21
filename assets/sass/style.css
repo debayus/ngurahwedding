@@ -8252,3 +8252,7 @@ img {
 .wpo-site-footer-s2 .wpo-upper-footer {
   padding-bottom: 400px;
 }
+
+#mahas-door .wpo-contact-section-wrapper {
+  width: 100vh;
+}
