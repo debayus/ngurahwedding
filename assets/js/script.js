@@ -390,9 +390,15 @@
         },
         afterShow: function () {
           audio.pause();
+          $("#mahas-player i")
+            .removeClass("ti-control-pause")
+            .addClass("ti-control-play");
         },
         afterClose: function () {
           audio.play();
+          $("#mahas-player i")
+            .removeClass("ti-control-play")
+            .addClass("ti-control-pause");
         },
       });
       return false;
