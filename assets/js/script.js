@@ -37,6 +37,31 @@
     }
   });
 
+  // IMAGES
+  var image = `<div class="grid">
+      <div class="img-holder">
+        <a
+          href="assets/images/portfolio/large/@key.jpg"
+          class="fancybox"
+          data-fancybox-group="gall-1"
+        >
+          <img
+            src="assets/images/portfolio/@key.jpg"
+            alt
+            class="img img-responsive"
+          />
+          <div class="hover-content">
+            <i class="ti-plus"></i>
+          </div>
+        </a>
+      </div>
+    </div>`;
+  var imageCount = 19;
+  for (var i = 1; i <= imageCount; i++) {
+    var key = i;
+    $("#mahas-gallery").append(image.replace("@key", key).replace("@key", key));
+  }
+
   /*------------------------------------------
         Nice Select
     -------------------------------------------*/

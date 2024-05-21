@@ -8242,3 +8242,13 @@ img {
   transition: all 0.2s;
   color: white;
 }
+
+.wpo-video-section,
+.wpo-cta-section .wpo-cta-item,
+.wpo-cta-section-s2 .wpo-cta-item {
+  background-size: cover;
+}
+
+.wpo-site-footer-s2 .wpo-upper-footer {
+  padding-bottom: 400px;
+}
