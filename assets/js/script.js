@@ -1,6 +1,42 @@
 (function ($) {
   "use strict";
 
+  var audio = new Audio("assets/music.mp3");
+
+  var urlParams = new URLSearchParams(window.location.search);
+  var to = urlParams.get("to");
+  if (to) {
+    $("#mahas-to").html(to);
+  } else {
+    $("#mahas-kepada").hide();
+    $("#mahas-to").html("You Are Invited");
+  }
+
+  $("#btn-open").on("click", (event) => {
+    event.preventDefault();
+    $("#mahas-door").fadeOut(() => {
+      $("#mahas-door").addClass("d-none");
+      audio.play();
+      $("#mahas-player").show();
+    });
+    window.scrollTo(0, 0);
+  });
+
+  $("#mahas-player").on("click", (event) => {
+    event.preventDefault();
+    if (audio.paused) {
+      audio.play();
+      $("#mahas-player i")
+        .removeClass("ti-control-play")
+        .addClass("ti-control-pause");
+    } else {
+      audio.pause();
+      $("#mahas-player i")
+        .removeClass("ti-control-pause")
+        .addClass("ti-control-play");
+    }
+  });
+
   /*------------------------------------------
         Nice Select
     -------------------------------------------*/
@@ -326,6 +362,12 @@
 
         beforeShow: function () {
           $(".fancybox-wrap").addClass("gallery-fancybox");
+        },
+        afterShow: function () {
+          audio.pause();
+        },
+        afterClose: function () {
+          audio.play();
         },
       });
       return false;
