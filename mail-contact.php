@@ -21,7 +21,7 @@ $mail->Port       = 465;
 
 // Recipients
 $mail->setFrom('service@mahas.my.id', 'Mahas');
-$mail->addAddress('bayusth@gmail.com', 'Ngurah');
+$mail->addAddress('ngurah.np34@gmail.com', 'Ngurah');
 
 // Content
 $mail->isHTML(true);
@@ -29,7 +29,7 @@ $mail->Subject = 'Wedding Invitation';
 $mail->Body    = "
 	<h2>Contact Form Submission</h2>
 	<p><strong>Name:</strong> $name</p>
-	<p><strong>Radio Group:</strong> $radio_group</p>
+	<p><strong>Come:</strong> $radio_group</p>
 	<p><strong>Guest:</strong> $guest</p>
 	<p><strong>Note:</strong> $reason</p>
 ";
