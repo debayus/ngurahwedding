@@ -1,0 +1,1 @@
+<IfModule mod_rewrite.c> Options -Indexes </IfModule>
