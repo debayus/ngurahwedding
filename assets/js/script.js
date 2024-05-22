@@ -44,6 +44,7 @@
           href="assets/images/portfolio/large/@key.jpg"
           class="fancybox"
           data-fancybox-group="gall-1"
+          data-fancybox="gallery"
         >
           <img
             src="assets/images/portfolio/@key.jpg"
@@ -354,9 +355,21 @@
     -------------------------------------------*/
   if ($(".fancybox").length) {
     $(".fancybox").fancybox({
+      buttons: [
+        "zoom",
+        "download",
+        "slideShow",
+        "fullScreen",
+        "thumbs",
+        "close",
+      ],
       openEffect: "elastic",
       closeEffect: "elastic",
       wrapCSS: "project-fancybox-title-style",
+      afterLoad: function () {
+        this.title =
+          '<a download href="' + this.href + '">Download</a> ' + this.title;
+      },
     });
   }
 
@@ -384,7 +397,6 @@
           title: { type: "inside" },
           media: {},
         },
-
         beforeShow: function () {
           $(".fancybox-wrap").addClass("gallery-fancybox");
         },

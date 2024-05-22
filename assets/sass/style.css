@@ -71,13 +71,14 @@ html {
 }
 
 body {
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
   color: #323232;
   background-color: #fff;
   font-size: 18px;
   font-size: 1.2rem;
   overflow-x: hidden;
 }
+
 @media (max-width: 767px) {
   body {
     font-size: 14px;
@@ -361,7 +362,7 @@ img {
   text-transform: capitalize;
   font-size: 20px;
   color: #c8a898;
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
   display: block;
 }
 @media (max-width: 575px) {
@@ -1143,7 +1144,7 @@ img {
   font-weight: 400;
   line-height: 1.3em;
   margin: 0 0 0.3em;
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 @media (max-width: 1199px) {
   .blog-sidebar .recent-post-widget .post h4 {
@@ -1341,7 +1342,7 @@ img {
   position: relative;
   text-transform: none;
   text-transform: uppercase;
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 .wpo-shop-sidebar > .widget + .widget {
   margin-top: 65px;
@@ -1457,7 +1458,7 @@ img {
 }
 .wpo-shop-sidebar .widget_product_categories,
 .wpo-shop-sidebar .woocommerce-widget-layered-nav {
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 .wpo-shop-sidebar .widget_product_categories .product-categories a,
 .wpo-shop-sidebar
@@ -1596,7 +1597,7 @@ img {
   font-size: 18px;
   font-weight: 600;
   color: #585858;
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 .widget_best-seller .wpo-best-seller-item .wpo-best-seller-text span {
   font-size: 16px;
@@ -2568,7 +2569,7 @@ img {
     color: #101010;
     font-weight: 500;
     position: relative;
-    font-family: "Jost", sans-serif;
+    font-family: "Public Sans", sans-serif;
     text-transform: uppercase;
   }
 }
@@ -3133,7 +3134,7 @@ img {
   font-weight: 400;
   line-height: normal;
   color: #c8a898;
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
   margin-bottom: 0;
 }
 @media (max-width: 1399px) {
@@ -8050,7 +8051,7 @@ img {
   font-weight: 500;
   margin: 0 0 1em;
   letter-spacing: 3px;
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 @media (max-width: 991px) {
   .wpo-blog-single-section .comments-area .comments-title {
@@ -8086,7 +8087,7 @@ img {
   margin-bottom: 20px;
 }
 .wpo-blog-single-section .comments-area .comments-meta h4 {
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-size: 1.2rem;
   color: #101010;
@@ -8101,7 +8102,7 @@ img {
   text-transform: none;
   display: inline-block;
   padding-left: 5px;
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 @media (max-width: 767px) {
   .wpo-blog-single-section .comments-area .comments-meta h4 span {
@@ -8117,7 +8118,7 @@ img {
   text-align: center;
   border-radius: 50px;
   display: inline-block;
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
   text-decoration: underline;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -8133,7 +8134,7 @@ img {
   font-size: 1.4666666667rem;
   margin: 0 0 1.5em;
   letter-spacing: 2px;
-  font-family: "Jost", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 @media (max-width: 991px) {
   .wpo-blog-single-section .comment-respond .comment-reply-title {
@@ -8283,4 +8284,75 @@ img {
 
 #mahas-door .wpo-contact-section-wrapper {
   width: 100vh;
+}
+
+#mahas-door .shape-2,
+#mahas-door .shape-1 {
+  z-index: 11;
+}
+
+#mahas-door .wpo-contact-form-area::before {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/door.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#mahas-door h2 {
+  color: white;
+}
+
+#mahas-door p,
+#mahas-door .wpo-section-title {
+  color: #c8a898;
+}
+
+.color-primary {
+  color: #c8a898;
+}
+
+@media (max-width: 450px) {
+  .static-hero .static-hero-right .static-hero-shape {
+    max-width: 150px;
+    right: -30px;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .static-hero .static-hero-right .static-hero-shape {
+    max-width: 250px;
+    right: -65px;
+    bottom: -30px;
+  }
+}
+
+.wpo-site-footer-s2 .wpo-upper-footer {
+  padding-bottom: 600px;
+}
+
+.wpo-portfolio-section h3 {
+  color: #fff;
+}
+
+#mahas-surat {
+  background: url(../images/cta2.jpg) no-repeat center center;
+}
+
+#mahas-surat .wpo-cta-item::before {
+  background: none;
+}
+
+#mahas-surat .wpo-cta-item::before {
+  background-color: #0000008a;
+  border-radius: 20px;
+}
+
+#mahas-surat .wpo-cta-item::after {
+  background: none;
+}
+
+#mahas-surat .wpo-cta-item {
+  padding: 80px 0;
 }
