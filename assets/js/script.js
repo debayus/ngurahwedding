@@ -15,6 +15,7 @@
   $("#btn-open").on("click", (event) => {
     event.preventDefault();
     $("#mahas-door").fadeOut(() => {
+      $(".page-wrapper").css("max-height", "");
       $("#mahas-door").addClass("d-none");
       audio.play();
       $("#mahas-player").show();
@@ -896,7 +897,7 @@
         = COUNTDOWN CLOCK2
     -------------------------------------------*/
   if ($("#clock2").length) {
-    $("#clock2").countdown("2024/06/14", function (event) {
+    $("#clock2").countdown("2024-06-19 10:00:00", function (event) {
       var $this = $(this).html(
         event.strftime(
           "" +
@@ -912,7 +913,7 @@
         = COUNTDOWN CLOCK3
     -------------------------------------------*/
   if ($("#clock3").length) {
-    $("#clock3").countdown("2024/06/14", function (event) {
+    $("#clock3").countdown("2024-06-19 10:00:00", function (event) {
       var $this = $(this).html(
         event.strftime(
           "" +
